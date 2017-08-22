@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<title>W3.CSS</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="icon" href="favicon.png" type="image/png">
+<link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+<link href="css/style.css" rel="stylesheet" type="text/css">
+<link href="css/linecons.css" rel="stylesheet" type="text/css">
+<link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+<link href="css/responsive.css" rel="stylesheet" type="text/css">
+<link href="css/animate.css" rel="stylesheet" type="text/css">
+<link href="css/plus.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css">
+<script src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script src="https://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+<script>
+document.addEventListener('swipe', function(event) {
+  alert("hi");
+});
+
+</script>
+<style>
+  .mySlides {
+    display: none;
+    text-align: center;
+    font-family: 'Dosis'!important;
+    font-weight: 500;
+    color: white!important;
+    min-height: 500px;
+    width: 100%;
+  }
+
+  .w3-left,
+  .w3-right,
+  .w3-badge {
+    cursor: pointer
+  }
+
+  .w3-badge {
+    height: 13px;
+    width: 13px;
+    padding: 0
+  }
+
+  .h1 {
+    font-weight: bold;
+    position: relative;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .s1 {
+    background-color: #6094d7!important;
+  }
+
+  .s2 {
+    background-color: #ff5c5c!important;
+  }
+
+  .s3 {
+    background-color: #66cc99!important;
+  }
+
+  .s4 {
+
+    background-color: #ff8088!important;
+  }
+
+  .text {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+  }
+
+  .fa-arrow-circle-o-left:hover {
+    color: black;
+  }
+
+  .fa-arrow-circle-o-right:hover {
+    color: black;
+  }
+</style>
+
+<body>
+
+  <div class="w3-content" style="max-width:100%;">
+    <div class="mySlides w3-container w3-red s1 ">
+
+      <h1>Peers Over Profit</h1>
+      <h1>As a nonprofit organization, Peerlift is completely free.</h1>
+      <i class="fa fa-check-circle fa-5x" aria-hidden="true"></i>
+      <h4>Peerlift is committed to connecting all high school students, especially those from middle or low income backgrounds, <br>to a proven selection of exceptional opportunities for college .
+</h4>
+      <i class="fa fa-arrow-circle-o-left fa-3x" aria-hidden="true" onclick="plusDivs(-1);"></i>
+      <i class="fa fa-arrow-circle-o-right fa-3x" aria-hidden="true" onclick="plusDivs(1);"></i>
+      <div class="w3-left w3-display-bottommiddle" onclick="plusDivs(-1)">&#10094;</div>
+    </div>
+    <div class="mySlides w3-container w3-red s2">
+      <h1>Student-led</h1>
+      <i class="fa fa-check-circle fa-5x" aria-hidden="true"></i>
+      <h1>Of our twenty person team is eighteen years old or younger. </h1>
+
+      <h4>Peerlift is proud to be the only major opportunities platform exclusively led by current students.
+</h4>
+      <i class="fa fa-arrow-circle-o-left fa-3x" aria-hidden="true" onclick="plusDivs(-1);"></i>
+      <i class="fa fa-arrow-circle-o-right fa-3x" aria-hidden="true" onclick="plusDivs(1);"></i>
+    </div>
+    <div class="mySlides w3-container w3-red s3">
+      <h1>Traditional Websites.</h1>
+      <h1>Millions of scholarships.  Too niche, too regional, and too complicated.  A big headache.</h1>
+      <i class="fa fa-check-circle fa-5x" aria-hidden="true"></i>
+      <h4>A curated set of 350 opportunities.  All offer financial aid.  All meaningful.  All for lower + middle income students.  The future.
+</h4>
+      <i class="fa fa-arrow-circle-o-left fa-3x" aria-hidden="true" onclick="plusDivs(-1);"></i>
+      <i class="fa fa-arrow-circle-o-right fa-3x" aria-hidden="true" onclick="plusDivs(1);"></i>
+    </div>
+    <div class="mySlides w3-container w3-red s4">
+      <h1>Proven Content</h1>
+      <h1>Completley Crowdsourced</h1>
+      <i class="fa fa-check-circle fa-5x" aria-hidden="true"></i>
+      <h4>We crowdsourced with our peers at 15 top colleges for all of our content.  Each opportunity you see was invaluable to another student like you.
+</h4>
+      <i class="fa fa-arrow-circle-o-left fa-3x" aria-hidden="true" onclick="plusDivs(-1);"></i>
+      <i class="fa fa-arrow-circle-o-right fa-3x" aria-hidden="true" onclick="plusDivs(1);"></i>
+    </div>
+    <div class="w3-center w3-container w3-section w3-large w3-text-white" style="width:100%">
+
+      <span class="w3-badge demo w3-border w3-transparent " onclick="currentDiv(1)"></span>
+      <span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(2)"></span>
+      <span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(3)"></span>
+      <span class="w3-badge demo w3-border w3-transparent" onclick="currentDiv(4)"></span>
+    </div>
+
+  </div>
+  <script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {
+        slideIndex = 1
+      }
+      if (n < 1) {
+        slideIndex = x.length
+      }
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-white", "");
+      }
+      x[slideIndex - 1].style.display = "block";
+      dots[slideIndex - 1].className += " w3-white";
+    }
+    document.addEventListener('keydown', function(event) {
+      if (event.keyCode == 37) {
+        plusDivs(-1);
+      } else if (event.keyCode == 39) {
+        plusDivs(1);
+      }
+    });
+  </script>
+
+
+</body>
+
+</html>

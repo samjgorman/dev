@@ -1,0 +1,682 @@
+<!doctype html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, maximum-scale=1">
+  <title>Get Involved</title>
+  <link rel="icon" href="favicon.png" type="image/png">
+  <link href="css/bootstrap.css" rel="stylesheet" type="text/css">
+  <link href="css/style.css" rel="stylesheet" type="text/css">
+  <link href="css/linecons.css" rel="stylesheet" type="text/css">
+  <link href="css/font-awesome.css" rel="stylesheet" type="text/css">
+  <link href="css/responsive.css" rel="stylesheet" type="text/css">
+  <link href="css/animate.css" rel="stylesheet" type="text/css">
+  <link href="css/plus.css" rel="stylesheet" type="text/css">
+  <link href="https://fonts.googleapis.com/css?family=PT+Sans" rel="stylesheet">
+
+  <link href='http://fonts.googleapis.com/css?family=Lato:400,900,700,700italic,400italic,300italic,300,100italic,100,900italic' rel='stylesheet' type='text/css'>
+  <link href='http://fonts.googleapis.com/css?family=Dosis:400,500,700,800,600,300,200' rel='stylesheet' type='text/css'>
+
+  <!--[if IE]><style type="text/css">.pie {behavior:url(PIE.htc);}</style><![endif]-->
+
+  <script type="text/javascript" src="js/jquery.1.8.3.min.js"></script>
+  <script type="text/javascript" src="js/bootstrap.js"></script>
+  <script type="text/javascript" src="js/jquery-scrolltofixed.js"></script>
+  <script type="text/javascript" src="js/jquery.easing.1.3.js"></script>
+  <script type="text/javascript" src="js/jquery.isotope.js"></script>
+  <script type="text/javascript" src="js/ .js"></script>
+  <script type="text/javascript" src="js/classie.js"></script>
+
+  <!--[if lt IE 9]>
+    <script src="js/respond-1.1.0.min.js"></script>
+    <script src="js/html5shiv.js"></script>
+    <script src="js/html5element.js"></script>
+<![endif]-->
+
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $('.res-nav_click').click(function() {
+        $('ul.toggle').slideToggle(600)
+      });
+
+      $(document).ready(function() {
+        $(window).bind('scroll', function() {
+          if ($(window).scrollTop() > 0) {
+            $('#header_outer').addClass('fixed');
+          } else {
+            $('#header_outer').removeClass('fixed');
+          }
+        });
+
+      });
+
+
+    });
+
+    function resizeText() {
+      var preferredWidth = 767;
+      var displayWidth = window.innerWidth;
+      var percentage = displayWidth / preferredWidth;
+      var fontsizetitle = 25;
+      var newFontSizeTitle = Math.floor(fontsizetitle * percentage);
+      $(".divclass").css("font-size", newFontSizeTitle)
+    }
+  </script>
+</head>
+
+<body>
+  <style>
+    #top {
+      position: relative;
+      top: 0%;
+      width: 100%;
+      height: 100%;
+      background-image: url("./img/back11.jpg");
+      background-size: 100% 100%;
+      text-align: center;
+    }
+
+    body {
+      color: white;
+      font-family: 'lato';
+    }
+
+    .grassRootsSection {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      /*background-image: url("./img/back5.jpg");*/
+      background-color: #66cc99;
+      background-size: 100% 100%;
+      color: white;
+      text-align: center;
+    }
+
+    .sASection {
+      position: relative;
+      width: 100%;
+      min-height: 100vh;
+      /*background-image: url("./img/back5.jpg");*/
+      background-color: #6094d7;
+      background-size: 100% 100%;
+      color: white;
+      text-align: center;
+    }
+
+    .grassRootsContainer {
+      position: absolute;
+      height: 100%;
+      width: 75%;
+      top: 0;
+      left: 12.5%;
+      margin: auto;
+      text-align: center;
+    }
+
+    .bigText {
+      position: relative;
+      color: white font-family: 'lato';
+      font-size: 60px;
+      font-weight: 600;
+    }
+
+    .supportingText {
+      position: relative;
+      color: white font-family: 'lato';
+      font-size: 40px;
+      font-weight: 400;
+    }
+
+    .middleButton {
+      position: relative;
+      border: 2px solid white;
+      font-size: 40px;
+      font-weight: 300;
+      border-radius: 25px;
+      width: 30%;
+      text-align: center;
+      left: 35%;
+      opacity: .7;
+      font-weight: 600;
+    }
+
+    .middleButton:hover {
+      opacity: 1;
+    }
+
+    .detailedText {
+      position: relative;
+      color: white font-family: 'lato';
+      font-size: 25px;
+      font-weight: 350;
+    }
+
+    .video-container .bigText {
+      position: relative;
+      top: 30%;
+    }
+
+    .video-container .supportingText {
+      position: relative;
+      top: 30%;
+    }
+
+    .backArrow {
+      position: absolute;
+      color: grey;
+      top: 5%;
+      left: 2.5%;
+
+      width: 5%;
+      z-index: 100;
+    }
+
+    .backArrow:hover {
+      color: #6094d7;
+    }
+
+    .Line {
+      position: relative;
+      background-color: black;
+      width: 70%;
+      left:15%;
+      height: 3px;
+    }
+
+    ul {
+      list-style-type: disc;
+    }
+  </style>
+
+
+  <div class="backArrow"><a href="./index.html"><img src="./img/logoWhite.png"</i></a></div>
+  <!--Top_content-->
+  <section id="top">
+
+
+    <div class="video-container">
+
+      <div class="bigText">Our Team.</div><br>
+      <div class="supportingText">We’re a diverse group of students invested in providing opportunity</div>
+
+      <div class="titleIcon"><a href="#grassRoots" <i class="fa fa-caret-down fa-4x"></i></a></div>
+
+
+    </div>
+  </section>
+  <!--<div class="splitLine"></div>-->
+  <section class="main-section team" id="team">
+    <!--main-section team-start-->
+    <style>
+      .name {}
+
+      .positionD {}
+
+      .university {}
+    </style>
+    <div class="container">
+      <div class="team-leader-block clearfix">
+
+        <div class="team-leader-box">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/sam.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Sam Gorman</h3>
+          <p class="fadeInDown positionD" style="color:black">Executive Director</p>
+          <p class="fadeInDown university" style="color:black">Stanford University</p>
+        </div>
+
+
+
+        <div class="team-leader-box">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/mayank.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Mayank Mishra</h3>
+          <p class="fadeInDown positionD" style="color:black">Director of Technology</p>
+          <p class="fadeInDown university" style="color:black">University of Pennsylvania </p>
+        </div>
+
+        <div class="team-leader-box">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/alvin.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Alvin Kim</h3>
+          <p class="fadeInDown positionD" style="color:black">Senior Vice-President</p>
+          <p class="fadeInDown university" style="color:black">United States Army</p>
+        </div>
+
+
+
+        <div class="team-leader-box">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/sravya.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Sravya Alla</h3>
+          <p class="fadeInDown positionD" style="color:black">Director of Finance</p>
+          <p class="fadeInDown university" style="color:black">University of Pennsylvania</p>
+        </div>
+
+        <div class="team-leader-box">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/jerry.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Jerry Registre</h3>
+          <p class="fadeInDown positionD" style="color:black">Director of Content Development</p>
+          <p class="fadeInDown university" style="color:black">Harvard College</p>
+        </div>
+
+        <div class="team-leader-box">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/julie.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Julie Chen</h3>
+          <p class="fadeInDown positionD" style="color:black">Director of Marketing</p>
+          <p class="fadeInDown university" style="color:black">University of Pennsylvania</p>
+        </div>
+
+        <div class="team-leader-box">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/dana.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Danna Rodriguez</h3>
+          <p class="fadeInDown positionD" style="color:black">Associate Director of Social Media</p>
+          <p class="fadeInDown university" style="color:black">Stanford University</p>
+        </div>
+
+        <div class="team-leader-box">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/tyra.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Tyra Nicolay</h3>
+          <p class="fadeInDown positionD" style="color:black">Associate Director of Public Relations</p>
+          <p class="fadeInDown university" style="color:black">Stanford University</p>
+        </div>
+
+        <div class="team-leader-box">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/zoi.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Zoi Urban</h3>
+          <p class="fadeInDown positionD" style="color:black">Associate Director of Partnerships</p>
+          <p class="fadeInDown university" style="color:black">Harvard College</p>
+        </div>
+
+        <div class="team-leader-box contentE">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/basil.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Basil Aranda</h3>
+          <p class="fadeInDown positionD" style="color:black">Chair of High School Board</p>
+          <p class="fadeInDown university" style="color:black">Burbank High School</p>
+        </div>
+
+        <div class="team-leader-box contentE">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/amira.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Amira Chow</h3>
+          <p class="fadeInDown positionD" style="color:black">Associate Director of Outreach</p>
+          <p class="fadeInDown university" style="color:black">Hoover High School</p>
+        </div>
+
+
+        <div class="team-leader-box contentE">
+          <div class="team-leader   fadeInDown">
+            <div class="team-leader-shadow"><a href="javascript:void(0)"></a></div>
+            <img src="img/team/will.png" alt="">
+            <ul>
+              <li><a href="javascript:void(0)" class="fa-twitter"></a></li>
+              <li><a href="javascript:void(0)" class="fa-facebook"></a></li>
+              <li><a href="javascript:void(0)" class="fa-pinterest"></a></li>
+              <li><a href="javascript:void(0)" class="fa-google-plus"></a></li>
+            </ul>
+          </div>
+          <h3 class="fadeInDown name">Will McCloskey</h3>
+          <p class="fadeInDown positionD" style="color:black">Creative Director</p>
+          <p class="fadeInDown university" style="color:black">Rochester Institute of Technology</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <div class="Line"></div>
+  <section class="main-section team" id="team">
+    <!--main-section team-start-->
+    <style>
+      .name {}
+
+      .positionD {}
+
+      .university {}
+    </style>
+    <div class="container">
+
+      <div class="team-leader-block clearfix">
+
+
+        <div class="team-leader-box contentD">
+          <h3 class="fadeInDown name">Rajath Salegame</h3>
+          <p class="fadeInDown positionD" style="color:black">Associate Director of Continuity</p>
+          <p class="fadeInDown university" style="color:black">Harvard College</p>
+        </div>
+
+        <div class="team-leader-box contentD">
+          <h3 class="fadeInDown name">Zainab Badejo</h3>
+          <p class="fadeInDown positionD" style="color:black">Content Team Member</p>
+          <p class="fadeInDown university" style="color:black">Towson University</p>
+        </div>
+
+        <div class="team-leader-box contentD">
+          <h3 class="fadeInDown name">Keturah Gadson</h3>
+          <p class="fadeInDown positionD" style="color:black">Content Team Member</p>
+          <p class="fadeInDown university" style="color:black">Harvard College</p>
+        </div>
+
+        <div class="team-leader-box contentD">
+          <h3 class="fadeInDown name">Asha Prihar</h3>
+          <p class="fadeInDown positionD" style="color:black">Content Team Member</p>
+          <p class="fadeInDown university" style="color:black">Yale University</p>
+        </div>
+
+        <div class="team-leader-box contentD">
+          <h3 class="fadeInDown name">AnQi Yu</h3>
+          <p class="fadeInDown positionD" style="color:black">Content Team Member</p>
+          <p class="fadeInDown university" style="color:black">Stanford University</p>
+        </div>
+
+        <div class="team-leader-box contentD">
+          <h3 class="fadeInDown name">Sofia Acosta</h3>
+          <p class="fadeInDown positionD" style="color:black">Content Team Member</p>
+          <p class="fadeInDown university" style="color:black">Burbank High School</p>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer_section donateFooter" id="contact">
+    <style>
+      .socialMediaStuff i{
+        position: relative;
+        color:white;
+        font-size: 30px;
+        text-align: center;
+        left:47%;
+        padding-top: 10px;
+        padding-right: 3vw;
+      }
+      .socialMediaStuff i:hover{
+        color:grey;
+      }
+      .footer_section a{
+        color:white!important;
+      }
+      .footer_section a:hover{
+        color:#6094d7!important;
+      }
+    </style>
+    <div class="socialMediaStuff" style="position: relative; width:100%; height:50px; background-color:#6094d7;"><a href="https://www.facebook.com/peersoverprofit"><i class="fa fa-facebook" aria-hidden="true"></i></a><a href="contact@peerlift.org"><i class="fa fa-envelope" aria-hidden="true"></i></a></div>
+    <div class="footer_bottom" style="background-color:#23282d;">
+
+      <span><a href="./index.html"><img style="width:150px;" src="img/logotextWhite.png" alt=""></a></span>
+      <span style="padding-top:30px; font-weight:800;">
+        <a class="aTest" href="./index.html">Home</a> | <a href="./index.html#service">Opportunities</a> | <a href="./index.html#mission">Mission</a> | <a href="./team.html">Our Team</a> | <a href="./getInvolved.html"> Get Involved</a> | <a href="./donate.html">Donate</a>
+      </span>
+      <span style="padding-top:30px; font-weight:800; font-size:12px;">Website Created By <a style="font-size:12px;" href="http://mayankmishra.org">Mayank Mishra</a>.</span>
+    </div>
+  </footer>
+  <script type="text/javascript">
+    $(document).ready(function(e) {
+      $('#header_outer').scrollToFixed();
+      $('.res-nav_click').click(function() {
+        $('.main-nav').slideToggle();
+        return false
+
+      });
+
+    });
+  </script>
+  <script>
+    = new({
+      animateClass: 'animated',
+      offset: 100
+    });
+    .init();
+    document.getElementById('').onclick = function() {
+      var section = document.createElement('section');
+      section.className = '  fadeInDown';
+      section.className = '  shake';
+      section.className = '  zoomIn';
+      section.className = '  lightSpeedIn';
+      this.parentNode.insertBefore(section, this);
+    };
+  </script>
+  <script type="text/javascript">
+    $(window).load(function() {
+
+      $('a').bind('click', function(event) {
+        var $anchor = $(this);
+
+        $('html, body').stop().animate({
+          scrollTop: $($anchor.attr('href')).offset().top - 91
+        }, 1500, 'easeInOutExpo');
+        /*
+        if you don't want to use the easing effects:
+        $('html, body').stop().animate({
+        	scrollTop: $($anchor.attr('href')).offset().top
+        }, 1000);
+        */
+        event.preventDefault();
+      });
+    })
+  </script>
+
+  <!--<script type="text/javascript">
+
+$(window).load(function(){
+
+
+  var $container = $('.portfolioContainer'),
+      $body = $('body'),
+      colW = 350,
+      columns = null;
+
+
+  $container.isotope({
+    // disable window resizing
+    resizable: true,
+    masonry: {
+      columnWidth: colW
+    }
+  });
+
+  $(window).smartresize(function(){
+    // check if columns has changed
+    var currentColumns = Math.floor( ( $body.width() -30 ) / colW );
+    if ( currentColumns !== columns ) {
+      // set new column count
+      columns = currentColumns;
+      // apply width to container manually, then trigger relayout
+      $container.width( columns * colW )
+        .isotope('reLayout');
+    }
+
+  }).smartresize(); // trigger resize to set container width
+  $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
+
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+
+            filter: selector,
+         });
+         return false;
+    });
+
+});
+
+</script>
+
+
+-->
+
+  <script type="text/javascript">
+    jQuery(document).ready(function($) {
+      // Portfolio Isotope
+      var container = $('#portfolio-wrap');
+
+
+      container.isotope({
+        animationEngine: 'best-available',
+        animationOptions: {
+          duration: 200,
+          queue: false
+        },
+        layoutMode: 'fitRows'
+      });
+
+      $('#filters a').click(function() {
+        $('#filters a').removeClass('active');
+        $(this).addClass('active');
+        var selector = $(this).attr('data-filter');
+        container.isotope({
+          filter: selector
+        });
+        setProjects();
+        return false;
+      });
+
+
+      function splitColumns() {
+        var winWidth = $(window).width(),
+          columnNumb = 1;
+
+
+        if (winWidth > 1024) {
+          columnNumb = 4;
+        } else if (winWidth > 900) {
+          columnNumb = 2;
+        } else if (winWidth > 479) {
+          columnNumb = 2;
+        } else if (winWidth < 479) {
+          columnNumb = 1;
+        }
+
+        return columnNumb;
+      }
+
+      function setColumns() {
+        var winWidth = $(window).width(),
+          columnNumb = splitColumns(),
+          postWidth = Math.floor(winWidth / columnNumb);
+
+        container.find('.portfolio-item').each(function() {
+          $(this).css({
+            width: postWidth + 'px'
+          });
+        });
+      }
+
+      function setProjects() {
+        setColumns();
+        container.isotope('reLayout');
+      }
+
+      container.imagesLoaded(function() {
+        setColumns();
+      });
+
+
+      $(window).bind('resize', function() {
+        setProjects();
+      });
+
+    });
+    $(window).load(function() {
+      jQuery('#all').click();
+      return false;
+    });
+  </script>
+</body>
+
+</html>
